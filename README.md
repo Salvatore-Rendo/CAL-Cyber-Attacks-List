@@ -37,8 +37,24 @@ A list of cyber Attacks mad with Python or C, feel free to check it out
 
 ## ⚠️ Warning <a name = "about"></a>
 
-<b>This is just an example to practice cybersecurity related topics, don't use this software with malicoius intent.
-</b>
+**DISCLAIMER: THIS IS AN EXAMPLE FOR PRACTICING CYBERSECURITY-RELATED TOPICS**
+
+This repository is solely intended for educational and practice purposes related to cybersecurity. It is NOT meant to be used for any malicious or illegal activities. 
+
+**Please note:**
+
+- Do not use this software or any information provided here with malicious intent.
+- This repository is meant for educational purposes to enhance cybersecurity knowledge and skills.
+- I do not endorse, encourage, or support any form of illegal or unethical activities.
+
+Remember to use the knowledge gained from this repository responsibly and in compliance with applicable laws and regulations.
+
+**Contributors:** If you contribute to this repository, you are expected to follow the guidelines, which align with these principles.
+
+This disclaimer is intended to make my stance on the responsible and ethical use of cybersecurity knowledge clear. If you have any questions or concerns, please feel free to reach out.
+
+Thank you for understanding and adhering to these principles.
+
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 ### Installing
