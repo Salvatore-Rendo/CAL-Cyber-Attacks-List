@@ -26,6 +26,8 @@
 - [🧐 About ](#-about-)
 - [⚠️ Warning ](#️-warning-)
 - [🏁 Getting Started ](#-getting-started-)
+  - [Installing](#installing)
+- [🎈 Usage ](#-usage-)
 - [⛏️ Built Using ](#️-built-using-)
 - [✍️ Authors ](#️-authors-)
 
@@ -39,7 +41,24 @@ A list of cyber Attacks mad with Python or C, feel free to check it out
 </b>
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-Change directory inside the projects
+### Installing
+
+
+```
+git clone https://github.com/Salvatore-Rendo/CAL-Cyber-Attacks-List
+```
+
+```
+cd CAL-Cyber-Attacks-List
+```
+
+```
+pip3 install -r requirements.txt
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+Change directory inside the projects to chose the attack you want to use:
 
 ```
 cd Attack-you-chose
@@ -51,15 +70,19 @@ Then run the helper to get a better understanding of the attack
 attack-you-chose.py -h
 ```
 
-If the attack requires a target ip, you can easily create a server with python or with netcat to try it out:
+If the attack requires a target ip, you can easily create a dummy server with python:
 
 ```
 python3 -m http.server [port to listen eg.4343]
 ```
-Or:
+Or with netcat:
 ```
 nc -lk [port to listen eg.4343]
 ```
+
+And use it to be the target of your attacks.
+
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
