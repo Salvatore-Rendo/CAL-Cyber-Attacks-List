@@ -83,7 +83,7 @@ cd Attack-you-chose
 Then run the helper to get a better understanding of the attack
 
 ```
-attack-you-chose.py -h
+python3 attack-you-chose.py -h
 ```
 
 If the attack requires a target ip, you can easily create a dummy server with python:
@@ -98,6 +98,7 @@ nc -lk [port to listen eg.4343]
 
 And use it to be the target of your attacks.
 
+I recommend using a network analyzer (e.g., [Wireshark](https://www.wireshark.org/)) to observe the results of the attacks and to analyze the types of traffic they generate.
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
