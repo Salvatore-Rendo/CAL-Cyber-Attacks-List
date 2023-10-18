@@ -6,14 +6,14 @@ def args_handler():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=textwrap.dedent('''\
-        A script for performing a simple DoS Attack on target IP address with multiple threads.
+        A script for performing a HTTP Request Flood on target IP address with multiple threads.
         
         Usage examples:
-        1. To perform DoS Attack on the target IP and with the default destiantion port (8080) and number of threads (500):
-           Run: python simple-dos.py 192.168.1.100
+        1. To perform HTTP Request Flood on the target IP and with the default destiantion port (8080) and number of threads (500):
+           Run: python http-request-flood.py 192.168.1.100
         
         2. To specify the target IP at specified destination port (e.g., 4343) and the number of threads (e.g., 200):
-           Run: python simple-dos.py 192.168.1.100 -dp 4343 -t 200
+           Run: python http-request-flood.py 192.168.1.100 -dp 4343 -t 200
         ''')
     )
     
