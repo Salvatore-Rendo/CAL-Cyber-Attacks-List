@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> A list of cyber Attacks mad with Python or C
+<p align="center"> A list of cyber Attacks made with Python or C
     <br> 
 </p>
 
