@@ -6,14 +6,14 @@ def args_handler():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=textwrap.dedent('''\
-        A script for performing a simple Ping Flood Attack on target IP address with multiple threads.
+        A script for performing a simple Syn Flood Attack on target IP address with multiple threads.
         
         Usage examples:
-        1. To perform Ping Flood Attack on the target IP and to the default port (8080) from your default port(7000) and number of threads (500):
-           Run: python ping-flood.py 192.168.1.100
+        1. To perform Syn Flood Attack on the target IP and to the default port (8080) from your default port(7000) and number of threads (500):
+           Run: python syn-flood.py 192.168.1.100
         
         2. To specify the target IP to a specified destination port (e.g., 4343) and from your source port(e.g., 9000) and a specified number of threads (e.g., 200):
-           Run: python ping-flood.py 192.168.1.100 -dp 4343 -sp 9000 -t 200
+           Run: python syn-flood.py 192.168.1.100 -dp 4343 -sp 9000 -t 200
         ''')
     )
     
