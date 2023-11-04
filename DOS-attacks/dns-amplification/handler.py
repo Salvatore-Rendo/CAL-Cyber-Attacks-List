@@ -9,7 +9,7 @@ def args_handler():
         A script for performing a DNS amplification Attack on target IP address with multiple threads.
         
         Usage examples:
-        1. To perform DNS amplification on the target IP with a standard   number of threads (500):
+        1. To perform DNS amplification on the target IP with a standard number of threads (500):
            Run: python dns-amplification.py 192.168.1.100
         
         2. To specify the target IP with a specified number of threads (e.g., 200):

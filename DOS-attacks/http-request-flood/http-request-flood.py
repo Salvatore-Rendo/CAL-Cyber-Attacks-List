@@ -20,7 +20,7 @@ def attack(target, dport):
 def main():
     target_ip, dport, num_threads = args_handler() 
 
-    for i in range(num_threads):
+    for _ in range(num_threads):
         thread = threading.Thread(target=attack, args=(target_ip, dport))
         thread.start()
 
